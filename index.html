@@ -3,140 +3,165 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>POSe Mobile - Kasir Digital Praktis</title>
+  <title>POSe Mobile - Solusi Kasir Digital</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdfdfd;
       color: #333;
     }
     header {
-      background: #ea1e1e;
+      background: linear-gradient(to right, #d60000, #ff5252);
       color: #fff;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
     header img {
-      width: 120px;
-      margin-bottom: 10px;
+      width: 100px;
+      margin-bottom: 20px;
     }
     header h1 {
       margin: 0;
-      font-size: 24px;
+      font-size: 32px;
+    }
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
     }
     .container {
-      max-width: 800px;
+      max-width: 960px;
       margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .features, .pricing, .cta {
+      margin-bottom: 60px;
+    }
+    .features h2, .pricing h2, .cta h2 {
+      color: #d60000;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .feature-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .feature-item {
+      background: #fff0f0;
       padding: 20px;
+      border-radius: 12px;
+      font-size: 16px;
     }
-    .section {
-      margin-bottom: 40px;
-    }
-    .section h2 {
-      color: #ea1e1e;
-      margin-bottom: 15px;
-    }
-    .fitur ul {
-      padding-left: 20px;
-    }
-    .fitur li {
-      margin-bottom: 8px;
-    }
-    .harga table {
+    .pricing-table {
       width: 100%;
       border-collapse: collapse;
     }
-    .harga th, .harga td {
-      border: 1px solid #ccc;
-      padding: 10px;
+    .pricing-table th, .pricing-table td {
+      border: 1px solid #ddd;
+      padding: 15px;
       text-align: center;
+    }
+    .pricing-table th {
+      background: #ffebeb;
     }
     .cta {
       text-align: center;
-      background: #ea1e1e;
+      background: #d60000;
       color: #fff;
-      padding: 20px;
-      border-radius: 10px;
+      padding: 40px 20px;
+      border-radius: 12px;
     }
     .cta a {
       display: inline-block;
-      padding: 10px 20px;
+      margin-top: 20px;
+      padding: 15px 30px;
       background: #fff;
-      color: #ea1e1e;
-      font-weight: bold;
+      color: #d60000;
       text-decoration: none;
+      font-weight: bold;
       border-radius: 8px;
-      margin-top: 10px;
     }
-    .promo-img {
-      width: 100%;
-      max-width: 600px;
-      margin: 20px auto;
-      display: block;
-      border-radius: 10px;
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+      background: #eee;
+      color: #666;
+    }
+    @media (max-width: 600px) {
+      .feature-list {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="https://poseportal.pcsindonesia.co.id/assets/logo.1e147b67.png" alt="PCS Payment Logo">
-  <h1>#JualanMakinGampang</h1>
-  <p>Kenalan dengan POSe Mobile: Kasir Digital Praktis untuk Semua Usaha!</p>
+  <img src="https://poseportal.pcsindonesia.co.id/assets/logo.1e147b67.png" alt="Logo POSe">
+  <h1>POSe Mobile</h1>
+  <p>Kembangkan usahamu dengan kasir digital yang praktis, cepat, dan efisien!</p>
 </header>
 
 <div class="container">
-  <img class="promo-img" src="https://i.imgur.com/VI8iNdD.jpg" alt="Promosi POSe Mobile 1">
-  <img class="promo-img" src="https://i.imgur.com/82Uoufn.jpg" alt="Promosi POSe Mobile 2">
-  <img class="promo-img" src="https://i.imgur.com/qcdPWUV.jpg" alt="Promosi POSe Mobile 3">
-
-  <div class="section fitur">
+  <section class="features">
     <h2>Fitur Unggulan</h2>
-    <ul>
-      <li>📱 Atur pesanan cepat & mudah</li>
-      <li>💸 Semua metode pembayaran (tunai & QRIS)</li>
-      <li>🎁 Atur promo otomatis & voucher</li>
-      <li>📊 Pantau laba rugi bisnis</li>
-      <li>📆 Laporan harian langsung dari HP</li>
-      <li>📈 Dashboard bisnis real-time</li>
-    </ul>
-  </div>
+    <div class="feature-list">
+      <div class="feature-item">📱 Atur pesanan & transaksi dari HP</div>
+      <div class="feature-item">💳 Terima pembayaran tunai & QRIS</div>
+      <div class="feature-item">📈 Laporan harian & dashboard realtime</div>
+      <div class="feature-item">🎯 Atur diskon & promo otomatis</div>
+      <div class="feature-item">👨‍💼 Kelola pegawai & shift</div>
+      <div class="feature-item">📦 Pantau stok & barang terlaris</div>
+    </div>
+  </section>
 
-  <div class="section harga">
+  <section class="pricing">
     <h2>Paket Langganan</h2>
-    <table>
-      <tr>
-        <th>Durasi</th>
-        <th>Harga</th>
-        <th>Bonus</th>
-      </tr>
-      <tr>
-        <td>3 Bulan</td>
-        <td>Rp90.000</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>6 Bulan</td>
-        <td>Rp180.000</td>
-        <td>Free 1 Bulan</td>
-      </tr>
-      <tr>
-        <td>12 Bulan</td>
-        <td>Rp360.000</td>
-        <td>Free 2 Bulan</td>
-      </tr>
+    <table class="pricing-table">
+      <thead>
+        <tr>
+          <th>Durasi</th>
+          <th>Harga</th>
+          <th>Bonus</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3 Bulan</td>
+          <td>Rp90.000</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>6 Bulan</td>
+          <td>Rp180.000</td>
+          <td>Free 1 Bulan</td>
+        </tr>
+        <tr>
+          <td>12 Bulan</td>
+          <td>Rp360.000</td>
+          <td>Free 2 Bulan</td>
+        </tr>
+      </tbody>
     </table>
-    <p><small>*Harga belum termasuk PPN 11% dan biaya layanan</small></p>
-  </div>
+    <p style="text-align:center; font-size: 13px; margin-top:10px;">*Harga belum termasuk PPN & biaya layanan</p>
+  </section>
 
-  <div class="cta">
-    <h2>Coba POSe Mobile Sekarang!</h2>
-    <p>Promo terbatas 🚀 Chat langsung dengan tim kami!</p>
+  <section class="cta">
+    <h2>Coba Gratis Sekarang!</h2>
+    <p>Mulai dengan POSe Mobile hari ini dan nikmati kemudahan berjualan</p>
     <a href="https://wa.me/6282352245300" target="_blank">Hubungi via WhatsApp</a>
-  </div>
+  </section>
 </div>
+
+<footer>
+  &copy; 2025 POSe Mobile | Promosi oleh Kris
+</footer>
 
 </body>
 </html>
+
